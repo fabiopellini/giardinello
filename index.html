@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giardinello House | Ville esclusive a Seccagrande, Ribera</title>
+  <meta name="description" content="Scopri i villini esclusivi con progetto già autorizzato a Seccagrande e Borgo Bonsignore, sulla costa di Ribera in Sicilia. Mare, natura, piscina privata e architettura contemporanea.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+          <a href="#" class="logo"><img src="assets/logo_consorzio_giardinello.png" alt="Giardinello House" class="logo-img"></a>
+      <nav class="nav-links">
+        <a href="#hero" data-it="Home" data-en="Home">Home</a>
+        <a href="#value" data-it="Il progetto" data-en="The project">Il progetto</a>
+        <a href="#residenze" data-it="Le ville" data-en="The villas">Le ville</a>
+        <a href="#territorio" data-it="Il territorio" data-en="The territory">Il territorio</a>
+        <a href="#masterplan" data-it="Planimetrie" data-en="Plans">Planimetrie</a>
+        <a href="#contatti" data-it="Contatti" data-en="Contacts">Contatti</a>
+        <a href="#" class="nav-download" onclick="openDepliant(); return false;" data-it="Depliant" data-en="Brochure">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:4px;vertical-align:middle;"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          Depliant
+        </a>
+        <a href="assets/Giardinello House srl _ Vendita Villini Esclusivi con Progetto Approvato in Sicilia.pdf" download class="nav-download" data-it="Scarica PDF" data-en="Download PDF">Scarica PDF</a>
+        <div class="lang-switch">
+          <button class="active" data-lang="it">IT</button>
+          <button data-lang="en">EN</button>
+        </div>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#hero" data-it="Home" data-en="Home">Home</a>
+    <a href="#value" data-it="Il progetto" data-en="The project">Il progetto</a>
+    <a href="#residenze" data-it="Le ville" data-en="The villas">Le ville</a>
+    <a href="#territorio" data-it="Il territorio" data-en="The territory">Il territorio</a>
+    <a href="#masterplan" data-it="Planimetrie" data-en="Plans">Planimetrie</a>
+    <a href="#contatti" data-it="Contatti" data-en="Contacts">Contatti</a>
+    <a href="#" onclick="openDepliant(); return false;" data-it="Depliant" data-en="Brochure">Depliant</a>
+    <a href="assets/Giardinello House srl _ Vendita Villini Esclusivi con Progetto Approvato in Sicilia.pdf" download class="mobile-download" data-it="Scarica PDF" data-en="Download PDF">Scarica PDF</a>
+    <div class="lang-switch-mobile">
+      <button class="active" data-lang="it">IT</button>
+      <button data-lang="en">EN</button>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img class="hero-fallback" src="assets/images/ita/5_villa_azzurra.jpeg" data-en-src="assets/images/eng/5_villa_azzurra.jpeg" data-it-src="assets/images/ita/5_villa_azzurra.jpeg" alt="Villa Azzurra - render architettonico con piscina" loading="eager">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/images/ita/5_villa_azzurra.jpeg" data-en-poster="assets/images/eng/5_villa_azzurra.jpeg" data-it-poster="assets/images/ita/5_villa_azzurra.jpeg">
+        <source src="assets/video_villa.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Seccagrande · Ribera · Agrigento · Sicilia</p>
+      <h1 data-it="Il tuo spazio esclusivo&#10;tra mare, natura e architettura." data-en="Your exclusive space&#10;between sea, nature and architecture.">Il tuo spazio esclusivo<br>tra mare, natura e architettura.</h1>
+      <p class="hero-subtitle" data-it="Villini di lusso con progetto già autorizzato, a poca distanza dalle spiagge della costa di Ribera." data-en="Luxury villas with pre-approved architectural projects, a short distance from the beaches of the Ribera coast.">Villini di lusso con progetto già autorizzato, a poca distanza dalle spiagge della costa di Ribera.</p>
+      <p class="hero-text" data-it="Giardinello House propone residenze private progettate per unire la libertà del vivere mediterraneo al valore di un percorso edilizio già definito." data-en="Giardinello House offers private residences designed to combine the freedom of Mediterranean living with the value of a pre-defined building process.">Giardinello House propone residenze private progettate per unire la libertà del vivere mediterraneo al valore di un percorso edilizio già definito.</p>
+      <div class="hero-ctas">
+        <a href="#contatti" class="btn-primary" data-it="Richiedi informazioni" data-en="Request information">Richiedi informazioni</a>
+        <a href="#residenze" class="btn-secondary" data-it="Scopri le residenze" data-en="Explore the residences">Scopri le residenze</a>
+      </div>
+      <p class="hero-micro" data-it="Progetti architettonici già autorizzati" data-en="Pre-approved architectural projects">Progetti architettonici già autorizzati</p>
+      <div class="scroll-indicator">
+        <span data-it="Scorri per scoprire" data-en="Scroll to discover">Scorri per scoprire</span>
+        <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Proposition -->
+  <section class="value-prop" id="value">
+    <div class="container">
+      <div class="value-grid fade-in">
+        <div class="value-text">
+          <span class="section-label" data-it="Il vantaggio" data-en="The advantage">Il vantaggio</span>
+          <h2 data-it="Abitare il futuro, senza le attese della burocrazia." data-en="Living the future, without waiting for bureaucracy.">Abitare il futuro, senza le attese della burocrazia.</h2>
+          <p data-it="Ogni proposta nasce da un progetto architettonico già autorizzato: una base solida per immaginare la propria casa sulla costa siciliana con maggiore chiarezza, tempi più definiti e un'identità progettuale contemporanea." data-en="Every proposal is born from a pre-approved architectural project: a solid foundation to imagine your home on the Sicilian coast with greater clarity, more defined timelines and a contemporary design identity.">Ogni proposta nasce da un progetto architettonico già autorizzato: una base solida per immaginare la propria casa sulla costa siciliana con maggiore chiarezza, tempi più definiti e un'identità progettuale contemporanea.</p>
+        </div>
+        <div class="value-features">
+          <div class="value-feature">
+            <svg class="value-feature-icon" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+            <h4 data-it="Progetti già autorizzati" data-en="Pre-approved projects">Progetti già autorizzati</h4>
+            <p data-it="Ogni villa è supportata da un progetto architettonico già autorizzato." data-en="Each villa is supported by a pre-approved architectural project.">Ogni villa è supportata da un progetto architettonico già autorizzato.</p>
+          </div>
+          <div class="value-feature">
+            <svg class="value-feature-icon" viewBox="0 0 24 24"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+            <h4 data-it="Ville con piscina privata" data-en="Villas with private pool">Ville con piscina privata</h4>
+            <p data-it="Ogni residenza include una piscina privata e zona solarium." data-en="Each residence includes a private pool and sunbathing area.">Ogni residenza include una piscina privata e zona solarium.</p>
+          </div>
+          <div class="value-feature">
+            <svg class="value-feature-icon" viewBox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+            <h4 data-it="Ampi spazi esterni e giardini" data-en="Ample outdoor spaces and gardens">Ampi spazi esterni e giardini</h4>
+            <p data-it="Giardini mediterranei e aree esterne progettate per il relax." data-en="Mediterranean gardens and outdoor areas designed for relaxation.">Giardini mediterranei e aree esterne progettate per il relax.</p>
+          </div>
+          <div class="value-feature">
+            <svg class="value-feature-icon" viewBox="0 0 24 24"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+            <h4 data-it="A poca distanza dal mare" data-en="A short distance from the sea">A poca distanza dal mare</h4>
+            <p data-it="Vicinanza alle spiagge cristalline di Seccagrande e della costa di Ribera." data-en="Close to the crystal-clear beaches of Seccagrande and the Ribera coast.">Vicinanza alle spiagge cristalline di Seccagrande e della costa di Ribera.</p>
+          </div>
+        </div>
+      </div>
+      <p class="value-note fade-in" data-it="La disponibilità e le caratteristiche delle soluzioni sono soggette a verifica." data-en="Availability and features of the solutions are subject to verification.">La disponibilità e le caratteristiche delle soluzioni sono soggette a verifica.</p>
+    </div>
+  </section>
+
+  <!-- Le Residenze -->
+  <section class="residenze" id="residenze">
+    <div class="container">
+      <div class="residenze-header fade-in">
+        <span class="section-label" data-it="Le residenze" data-en="The residences">Le residenze</span>
+        <h2 data-it="Ville esclusive sulla costa di Ribera" data-en="Exclusive villas on the Ribera coast">Ville esclusive sulla costa di Ribera</h2>
+        <p data-it="Progetti già autorizzati a Seccagrande e Borgo Bonsignore, tra uliveti, mare cristallino e piscine private." data-en="Pre-approved projects in Seccagrande and Borgo Bonsignore, among olive groves, crystal-clear sea and private pools.">Progetti già autorizzati a Seccagrande e Borgo Bonsignore, tra uliveti, mare cristallino e piscine private.</p>
+      </div>
+
+      <!-- Villa Smeraldo -->
+      <div class="villa-card villa-smeraldo fade-in">
+        <div class="villa-image" onclick="openLightbox(this.querySelector('img').src)">
+          <img src="assets/images/ita/2_villa_smeraldo.jpeg" data-en-src="assets/images/eng/2_villa_smeraldo.jpeg" data-it-src="assets/images/ita/2_villa_smeraldo.jpeg" alt="Villa Smeraldo - render architettonico con piscina e giardino" loading="lazy">
+          <div class="villa-image-badge">Villa Smeraldo</div>
+        </div>
+        <div class="villa-info">
+          <h3>Villa Smeraldo</h3>
+          <p data-it="Una villa dal carattere mediterraneo contemporaneo, pensata per valorizzare materiali naturali, spazi aperti e momenti di autentico relax." data-en="A villa with a contemporary Mediterranean character, designed to enhance natural materials, open spaces and moments of genuine relaxation.">Una villa dal carattere mediterraneo contemporaneo, pensata per valorizzare materiali naturali, spazi aperti e momenti di autentico relax.</p>
+          <ul class="villa-points">
+            <li data-it="Piscina privata con solarium" data-en="Private pool with sunbathing area">Piscina privata con solarium</li>
+            <li data-it="Patio coperto per pranzi e cene all'aperto" data-en="Covered patio for outdoor lunches and dinners">Patio coperto per pranzi e cene all'aperto</li>
+            <li data-it="Giardino paesaggistico" data-en="Landscaped garden">Giardino paesaggistico</li>
+            <li data-it="Ambienti luminosi e accoglienti" data-en="Bright and welcoming rooms">Ambienti luminosi e accoglienti</li>
+          </ul>
+          <button class="btn-outline" onclick="openModal('smeraldo')" data-it="Scopri Villa Smeraldo" data-en="Discover Villa Smeraldo">Scopri Villa Smeraldo</button>
+        </div>
+      </div>
+
+      <!-- Villa Corallo -->
+      <div class="villa-card villa-corallo fade-in">
+        <div class="villa-image" onclick="openLightbox(this.querySelector('img').src)">
+          <img src="assets/images/ita/3_villa_corallo.jpeg" data-en-src="assets/images/eng/3_villa_corallo.jpeg" data-it-src="assets/images/ita/3_villa_corallo.jpeg" alt="Villa Corallo - residenza con pietra naturale e tetto inclinato" loading="lazy">
+          <div class="villa-image-badge">Villa Corallo</div>
+        </div>
+        <div class="villa-info">
+          <h3>Villa Corallo</h3>
+          <p data-it="Una residenza su due livelli che reinterpreta l'eleganza delle ville siciliane attraverso pietra naturale, legno e un'architettura calda e distintiva." data-en="A two-level residence that reinterprets the elegance of Sicilian villas through natural stone, wood and warm, distinctive architecture.">Una residenza su due livelli che reinterpreta l'eleganza delle ville siciliane attraverso pietra naturale, legno e un'architettura calda e distintiva.</p>
+          <ul class="villa-points">
+            <li data-it="Architettura mediterranea" data-en="Mediterranean architecture">Architettura mediterranea</li>
+            <li data-it="Elementi in pietra naturale" data-en="Natural stone elements">Elementi in pietra naturale</li>
+            <li data-it="Ampi spazi abitativi" data-en="Spacious living areas">Ampi spazi abitativi</li>
+            <li data-it="Piscina e zona outdoor" data-en="Pool and outdoor area">Piscina e zona outdoor</li>
+          </ul>
+          <button class="btn-outline" onclick="openModal('corallo')" data-it="Scopri Villa Corallo" data-en="Discover Villa Corallo">Scopri Villa Corallo</button>
+        </div>
+      </div>
+
+      <!-- Villa Perla -->
+      <div class="villa-card villa-perla fade-in">
+        <div class="villa-image" onclick="openLightbox(this.querySelector('img').src)">
+          <img src="assets/images/ita/4_villa_perla.jpeg" data-en-src="assets/images/eng/4_villa_perla.jpeg" data-it-src="assets/images/ita/4_villa_perla.jpeg" alt="Villa Perla - villa con grandi vetrate e piscina al tramonto" loading="lazy">
+          <div class="villa-image-badge">Villa Perla</div>
+        </div>
+        <div class="villa-info">
+          <h3>Villa Perla</h3>
+          <p data-it="Linee pure, grandi vetrate e continuità tra interno ed esterno: una villa pensata per vivere la luce e il paesaggio tutto l'anno." data-en="Pure lines, large windows and continuity between interior and exterior: a villa designed to experience light and landscape all year round.">Linee pure, grandi vetrate e continuità tra interno ed esterno: una villa pensata per vivere la luce e il paesaggio tutto l'anno.</p>
+          <ul class="villa-points">
+            <li data-it="Circa 1.500 mq di giardino mediterraneo" data-en="Approx. 1,500 sqm of Mediterranean garden">Circa 1.500 mq di giardino mediterraneo</li>
+            <li data-it="Vetrate a tutta altezza" data-en="Floor-to-ceiling windows">Vetrate a tutta altezza</li>
+            <li data-it="Piscina privata" data-en="Private pool">Piscina privata</li>
+            <li data-it="Equilibrio tra lusso, comfort e sostenibilità" data-en="Balance between luxury, comfort and sustainability">Equilibrio tra lusso, comfort e sostenibilità</li>
+          </ul>
+          <button class="btn-outline" onclick="openModal('perla')" data-it="Scopri Villa Perla" data-en="Discover Villa Perla">Scopri Villa Perla</button>
+        </div>
+      </div>
+
+      <!-- Villa Azzurra -->
+      <div class="villa-card villa-azzurra fade-in">
+        <div class="villa-image" onclick="openLightbox(this.querySelector('img').src)">
+          <img src="assets/images/ita/5_villa_azzurra.jpeg" data-en-src="assets/images/eng/5_villa_azzurra.jpeg" data-it-src="assets/images/ita/5_villa_azzurra.jpeg" alt="Villa Azzurra - residenza su un solo livello con piscina" loading="lazy">
+          <div class="villa-image-badge">Villa Azzurra</div>
+        </div>
+        <div class="villa-info">
+          <h3>Villa Azzurra</h3>
+          <p data-it="Una residenza su un unico livello, dove design essenziale, rivestimenti in legno naturale e viste aperte dialogano con il paesaggio." data-en="A single-level residence where essential design, natural wood finishes and open views dialogue with the landscape.">Una residenza su un unico livello, dove design essenziale, rivestimenti in legno naturale e viste aperte dialogano con il paesaggio.</p>
+          <ul class="villa-points">
+            <li data-it="Sviluppo su un solo piano" data-en="Single-level layout">Sviluppo su un solo piano</li>
+            <li data-it="Ampie aperture panoramiche" data-en="Wide panoramic openings">Ampie aperture panoramiche</li>
+            <li data-it="Pergolati e schermature in legno" data-en="Pergolas and wooden screens">Pergolati e schermature in legno</li>
+            <li data-it="Piscina privata e spazi esterni generosi" data-en="Private pool and generous outdoor spaces">Piscina privata e spazi esterni generosi</li>
+          </ul>
+          <button class="btn-outline" onclick="openModal('azzurra')" data-it="Scopri Villa Azzurra" data-en="Discover Villa Azzurra">Scopri Villa Azzurra</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Territorio -->
+  <section class="territorio" id="territorio">
+    <div class="container">
+      <div class="territorio-header fade-in">
+        <span class="section-label" data-it="Il territorio" data-en="The territory">Il territorio</span>
+        <h2 data-it="Vivere la costa siciliana, ogni giorno." data-en="Living the Sicilian coast, every day.">Vivere la costa siciliana, ogni giorno.</h2>
+        <p data-it="Seccagrande, sulla costa di Ribera, offre un ritmo autentico: mare, spiagge, paesaggi aperti e la bellezza naturale della Sicilia sud-occidentale. Qui la casa non è soltanto un luogo da abitare, ma un punto di partenza per vivere il Mediterraneo." data-en="Seccagrande, on the coast of Ribera, offers an authentic rhythm: sea, beaches, open landscapes and the natural beauty of southwestern Sicily. Here the house is not just a place to live, but a starting point for experiencing the Mediterranean.">Seccagrande, sulla costa di Ribera, offre un ritmo autentico: mare, spiagge, paesaggi aperti e la bellezza naturale della Sicilia sud-occidentale. Qui la casa non è soltanto un luogo da abitare, ma un punto di partenza per vivere il Mediterraneo.</p>
+      </div>
+
+      <div class="territorio-slideshow fade-in">
+        <div class="slideshow-container">
+          <img class="slide active" src="assets/images/foto_mare.jpeg" alt="Acque cristalline della costa di Seccagrande" loading="lazy" onclick="openLightbox(this.src)">
+          <img class="slide" src="assets/images/foto_mare2.jpeg" alt="Spiagge sabbiose della costa di Ribera" loading="lazy" onclick="openLightbox(this.src)">
+          <img class="slide" src="assets/images/foto_mare3.jpeg" alt="Costa rocciosa mediterranea" loading="lazy" onclick="openLightbox(this.src)">
+          <img class="slide" src="assets/images/foto_mare4.jpeg" alt="Vista panoramica sul mare di Seccagrande" loading="lazy" onclick="openLightbox(this.src)">
+          <img class="slide" src="assets/images/foto_mare5.jpeg" alt="Tramonto sulla costa siciliana" loading="lazy" onclick="openLightbox(this.src)">
+          <img class="slide" src="assets/images/foto_mare6.jpeg" alt="Cala nascosta sulla costa di Ribera" loading="lazy" onclick="openLightbox(this.src)">
+          <img class="slide" src="assets/images/foto_mare7.jpeg" alt="Acque turchesi del Mediterraneo" loading="lazy" onclick="openLightbox(this.src)">
+          <img class="slide" src="assets/images/foto_mare8.jpeg" alt="Paesaggio costiero sud siciliano" loading="lazy" onclick="openLightbox(this.src)">
+          <button class="slideshow-prev" aria-label="Previous" onclick="prevSlide()">&#10094;</button>
+          <button class="slideshow-next" aria-label="Next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <div class="slideshow-dots" id="slideshowDots"></div>
+      </div>
+
+      <div class="territorio-attractions fade-in">
+        <div class="attraction-item">
+          <h4 data-it="Seccagrande e la costa di Ribera" data-en="Seccagrande and the Ribera coast">Seccagrande e la costa di Ribera</h4>
+          <p data-it="Spiagge di sabbia dorata e mare cristallino." data-en="Golden sand beaches and crystal-clear sea.">Spiagge di sabbia dorata e mare cristallino.</p>
+        </div>
+        <div class="attraction-item">
+          <h4 data-it="Borgo Bonsignore" data-en="Borgo Bonsignore">Borgo Bonsignore</h4>
+          <p data-it="Un borgo in rilancio con nuove opportunità." data-en="A village in renewal with new opportunities.">Un borgo in rilancio con nuove opportunità.</p>
+        </div>
+        <div class="attraction-item">
+          <h4 data-it="Riserva Naturale Foce del Fiume Platani" data-en="Platani River Mouth Nature Reserve">Riserva Naturale Foce del Fiume Platani</h4>
+          <p data-it="Natura incontaminata a pochi passi." data-en="Unspoiled nature just a few steps away.">Natura incontaminata a pochi passi.</p>
+        </div>
+        <div class="attraction-item">
+          <h4 data-it="Valle dei Templi" data-en="Valley of the Temples">Valle dei Templi</h4>
+          <p data-it="Patrimonio UNESCO, storia e cultura." data-en="UNESCO heritage, history and culture.">Patrimonio UNESCO, storia e cultura.</p>
+        </div>
+        <div class="attraction-item">
+          <h4 data-it="Scala dei Turchi" data-en="Scala dei Turchi">Scala dei Turchi</h4>
+          <p data-it="Icona della costa sud-siciliana." data-en="Icon of the south Sicilian coast.">Icona della costa sud-siciliana.</p>
+        </div>
+        <div class="attraction-item">
+          <h4 data-it="Parco Archeologico di Selinunte" data-en="Selinunte Archaeological Park">Parco Archeologico di Selinunte</h4>
+          <p data-it="Tra i più grandi templi della Magna Grecia." data-en="Among the largest temples of Magna Graecia.">Tra i più grandi templi della Magna Grecia.</p>
+        </div>
+      </div>
+
+      <p class="territorio-quote fade-in" data-it="Un territorio dove mare, natura, cultura e tradizioni convivono in modo autentico." data-en="A territory where sea, nature, culture and traditions coexist authentically.">Un territorio dove mare, natura, cultura e tradizioni convivono in modo autentico.</p>
+    </div>
+  </section>
+
+  <!-- Masterplan -->
+  <section class="masterplan" id="masterplan">
+    <div class="container">
+      <div class="masterplan-grid fade-in">
+        <div class="masterplan-image">
+          <img src="assets/images/planimetria.jpeg" alt="Planimetria generale del lotto Giardinello House" loading="lazy" onclick="openLightbox('assets/images/planimetria.jpeg')">
+        </div>
+        <div class="masterplan-text">
+          <span class="section-label" data-it="Masterplan" data-en="Masterplan">Masterplan</span>
+          <h2 data-it="Un progetto che lascia spazio alla vita." data-en="A project that leaves space for life.">Un progetto che lascia spazio alla vita.</h2>
+          <p data-it="Le soluzioni Giardinello House sono concepite per offrire privacy, vivibilità e continuità tra architettura, giardino e aree dedicate al benessere all'aperto." data-en="Giardinello House solutions are designed to offer privacy, livability and continuity between architecture, garden and outdoor wellness areas.">Le soluzioni Giardinello House sono concepite per offrire privacy, vivibilità e continuità tra architettura, giardino e aree dedicate al benessere all'aperto.</p>
+          <div class="masterplan-features">
+            <div class="masterplan-feature" data-it="Aree verdi private" data-en="Private green areas">Aree verdi private</div>
+            <div class="masterplan-feature" data-it="Piscina e solarium" data-en="Pool and sunbathing area">Piscina e solarium</div>
+            <div class="masterplan-feature" data-it="Patio e zone pranzo esterne" data-en="Patio and outdoor dining areas">Patio e zone pranzo esterne</div>
+            <div class="masterplan-feature" data-it="Spazi per il relax" data-en="Spaces for relaxation">Spazi per il relax</div>
+            <div class="masterplan-feature" data-it="Parcheggi e percorsi di accesso" data-en="Parking and access routes">Parcheggi e percorsi di accesso</div>
+            <div class="masterplan-feature" data-it="Soluzioni per il contesto mediterraneo" data-en="Solutions for the Mediterranean context">Soluzioni per il contesto mediterraneo</div>
+          </div>
+          <p class="masterplan-note" data-it="Planimetrie e rappresentazioni hanno valore puramente illustrativo e sono soggette a verifica tecnica e progettuale." data-en="Plans and representations are purely illustrative and subject to technical and design verification.">Planimetrie e rappresentazioni hanno valore puramente illustrativo e sono soggette a verifica tecnica e progettuale.</p>
+        </div>
+      </div>
+
+      <!-- Second plan image -->
+      <div class="fade-in" style="margin-top:64px;">
+        <img src="assets/images/pianta.jpeg" alt="Schema della sistemazione esterna con piscina e giardino" loading="lazy" style="width:100%;border:1px solid #eee;cursor:pointer;" onclick="openLightbox('assets/images/pianta.jpeg')">
+        <p class="masterplan-note" style="margin-top:12px;" data-it="Schema della sistemazione esterna. Valore puramente illustrativo." data-en="External arrangement scheme. Purely illustrative.">Schema della sistemazione esterna. Valore puramente illustrativo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community -->
+  <section class="community" id="community">
+    <div class="container">
+      <h2 class="fade-in" data-it="Una residenza, un paesaggio, un nuovo modo di appartenere." data-en="A residence, a landscape, a new way of belonging.">Una residenza, un paesaggio, un nuovo modo di appartenere.</h2>
+      <p class="fade-in" data-it="Giardinello House immagina un contesto residenziale raccolto, in cui ogni villa conserva la propria identità e privacy, condividendo il privilegio di vivere un territorio straordinario. Un progetto per chi cerca bellezza, tranquillità e una relazione più autentica con il Mediterraneo." data-en="Giardinello House imagines a close-knit residential context, where each villa retains its own identity and privacy, sharing the privilege of living in an extraordinary territory. A project for those seeking beauty, tranquility and a more authentic relationship with the Mediterranean.">Giardinello House immagina un contesto residenziale raccolto, in cui ogni villa conserva la propria identità e privacy, condividendo il privilegio di vivere un territorio straordinario. Un progetto per chi cerca bellezza, tranquillità e una relazione più autentica con il Mediterraneo.</p>
+      <div class="community-words fade-in">
+        <span class="community-word" data-it="Privacy" data-en="Privacy">Privacy</span>
+        <span class="community-word" data-it="Paesaggio" data-en="Landscape">Paesaggio</span>
+        <span class="community-word" data-it="Relazioni" data-en="Relationships">Relazioni</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Contact -->
+  <section class="cta-contact" id="contatti">
+    <div class="container">
+      <div class="cta-contact-grid fade-in">
+        <div class="cta-text">
+          <span class="section-label" data-it="Contatti" data-en="Contacts">Contatti</span>
+          <h2 data-it="Scopri la tua villa sulla costa di Ribera." data-en="Discover your villa on the Ribera coast.">Scopri la tua villa sulla costa di Ribera.</h2>
+          <p data-it="Richiedi una presentazione riservata del progetto, delle soluzioni disponibili e delle opportunità di personalizzazione." data-en="Request a private presentation of the project, available solutions and customization opportunities.">Richiedi una presentazione riservata del progetto, delle soluzioni disponibili e delle opportunità di personalizzazione.</p>
+
+          <div class="contact-details">
+            <div>
+              <h4 data-it="Telefono" data-en="Phone">Telefono</h4>
+              <p>+39 340 3907922 — Arch. Salvatore Triassi<br>
+              +39 340 5796680 — Ing. Vincenzo Caruana<br>
+              +39 366 1116521 — Dott. Gianni Riggi<br>
+              +39 366 4353779 — Arch. Massimiliano Triassi</p>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:consorziogiardinellohouse@gmail.com">consorziogiardinellohouse@gmail.com</a></p>
+            </div>
+          </div>
+          <p class="contact-privacy" data-it="Le informazioni inviate saranno trattate nel rispetto della normativa privacy applicabile." data-en="Information sent will be processed in compliance with applicable privacy regulations.">Le informazioni inviate saranno trattate nel rispetto della normativa privacy applicabile.</p>
+        </div>
+
+        <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome" data-it="Nome e cognome" data-en="Full name">Nome e cognome</label>
+              <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+              <label for="email" data-it="Email" data-en="Email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="telefono" data-it="Telefono" data-en="Phone">Telefono</label>
+              <input type="tel" id="telefono" name="telefono">
+            </div>
+            <div class="form-group">
+              <label for="interesse" data-it="Interesse principale" data-en="Main interest">Interesse principale</label>
+              <select id="interesse" name="interesse" required>
+                <option value="" data-it="-- Seleziona --" data-en="-- Select --">-- Seleziona --</option>
+                <option value="smeraldo" data-it="Villa Smeraldo" data-en="Villa Smeraldo">Villa Smeraldo</option>
+                <option value="corallo" data-it="Villa Corallo" data-en="Villa Corallo">Villa Corallo</option>
+                <option value="perla" data-it="Villa Perla" data-en="Villa Perla">Villa Perla</option>
+                <option value="azzurra" data-it="Villa Azzurra" data-en="Villa Azzurra">Villa Azzurra</option>
+                <option value="info" data-it="Informazioni generali" data-en="General information">Informazioni generali</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="messaggio" data-it="Messaggio" data-en="Message">Messaggio</label>
+            <textarea id="messaggio" name="messaggio" rows="4"></textarea>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="privacy" required>
+            <label for="privacy" data-it="Ho letto e accetto la Privacy Policy *" data-en="I have read and accept the Privacy Policy *">Ho letto e accetto la Privacy Policy *</label>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="marketing">
+            <label for="marketing" data-it="Acconsento a ricevere comunicazioni commerciali (facoltativo)" data-en="I consent to receive commercial communications (optional)">Acconsento a ricevere comunicazioni commerciali (facoltativo)</label>
+          </div>
+          <button type="submit" class="form-submit" data-it="Invia la richiesta" data-en="Send request">Invia la richiesta</button>
+          <div class="form-success" id="formSuccess" data-it="Grazie! La tua richiesta è stata inviata. Ti contatteremo al più presto." data-en="Thank you! Your request has been sent. We will contact you soon.">Grazie! La tua richiesta è stata inviata. Ti contatteremo al più presto.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+      <a href="#" class="logo"><img src="assets/logo_consorzio_giardinello.png" alt="Giardinello House" class="logo-img"></a>
+          <p>Consorzio Giardinello House</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h5 data-it="Navigazione" data-en="Navigation">Navigazione</h5>
+            <a href="#hero" data-it="Home" data-en="Home">Home</a>
+            <a href="#value" data-it="Il progetto" data-en="The project">Il progetto</a>
+            <a href="#residenze" data-it="Le ville" data-en="The villas">Le ville</a>
+            <a href="#territorio" data-it="Il territorio" data-en="The territory">Il territorio</a>
+            <a href="#contatti" data-it="Contatti" data-en="Contacts">Contatti</a>
+          </div>
+          <div class="footer-col">
+            <h5 data-it="Legal" data-en="Legal">Legal</h5>
+            <a href="privacy-policy.html" data-it="Privacy Policy" data-en="Privacy Policy">Privacy Policy</a>
+            <a href="cookie-policy.html" data-it="Cookie Policy" data-en="Cookie Policy">Cookie Policy</a>
+          </div>
+          <div class="footer-col">
+            <h5 data-it="Social" data-en="Social">Social</h5>
+            <div class="footer-social">
+              <a href="#" aria-label="Instagram">
+                <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="6" r="1" fill="currentColor"/></svg>
+              </a>
+              <a href="#" aria-label="Facebook">
+                <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 consorzio Giardinello House <span data-it="Tutti i diritti riservati." data-en="All rights reserved.">Tutti i diritti riservati.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/393403907922?text=Bonjourno,%20vorrei%20informazioni%20su%20Giardinello%20House" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.627.616l4.584-1.195A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.37 0-4.567-.82-6.293-2.192l-.44-.36-2.718.71.725-2.654-.358-.454A9.965 9.965 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></svg>
+    <span data-it="Parla con noi" data-en="Talk to us">Parla con noi</span>
+  </a>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <!-- Modal Villa -->
+  <div class="modal-overlay" id="villaModal">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <div class="modal-hero">
+        <img id="modalImage" src="" alt="">
+      </div>
+      <div class="modal-body">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+        <div class="modal-features" id="modalFeatures"></div>
+        <a href="#contatti" class="modal-cta" onclick="closeModal()" data-it="Richiedi informazioni su questa villa" data-en="Request information about this villa">Richiedi informazioni su questa villa</a>
+        <p class="modal-disclaimer" data-it="Immagini a scopo illustrativo. Soluzioni, finiture e configurazioni da verificare in sede contrattuale." data-en="Images for illustrative purposes only. Solutions, finishes and configurations to be verified at contractual stage.">Immagini a scopo illustrativo. Soluzioni, finiture e configurazioni da verificare in sede contrattuale.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightboxImg" src="" alt="">
+  </div>
+
+  <!-- Depliant Overlay -->
+  <div class="depliant-overlay" id="depliantOverlay">
+    <div class="depliant-container">
+      <div class="depliant-header">
+        <div class="depliant-header-left">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span data-it="DEPLIANT CARTACEO DIGITALE • GIARDINELLO HOUSE" data-en="DIGITAL BROCHURE • GIARDINELLO HOUSE">DEPLIANT CARTACEO DIGITALE • GIARDINELLO HOUSE</span>
+        </div>
+        <div class="depliant-header-right">
+          <button class="depliant-print" onclick="printDepliant()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            <span data-it="Stampa / Salva PDF" data-en="Print / Save PDF">Stampa / Salva PDF</span>
+          </button>
+          <button class="depliant-close" onclick="closeDepliant()">&times;</button>
+        </div>
+      </div>
+
+      <div class="depliant-body" id="depliantBody">
+        <!-- Tab: Villa Azzurra -->
+        <div class="depliant-tab active" data-tab="azzurra">
+          <div class="depliant-card">
+            <div class="depliant-image">
+              <img src="assets/images/ita/5_villa_azzurra.jpeg" data-en-src="assets/images/eng/5_villa_azzurra.jpeg" data-it-src="assets/images/ita/5_villa_azzurra.jpeg" alt="Villa Azzurra">
+            </div>
+            <div class="depliant-content">
+              <div class="depliant-text">
+                <p class="depliant-label" data-it="LA PROPRIETÀ" data-en="THE PROPERTY">LA PROPRIETÀ</p>
+                <p class="depliant-desc" data-it="Villa Azzurra è un'esclusiva residenza che incarna il lusso moderno attraverso linee pulite, materiali naturali e una perfetta integrazione con l'ambiente circostante. Costruita interamente su un unico livello, la villa si distingue per le sue ampie vetrate panoramiche e gli eleganti listelli frangisole in legno naturale che ne caratterizzano la facciata principale." data-en="Villa Azzurra is an exclusive residence that embodies modern luxury through clean lines, natural materials and perfect integration with the surrounding environment. Built entirely on a single level, the villa stands out for its large panoramic windows and elegant natural wood sun-breaking slats that characterize the main facade.">Villa Azzurra è un'esclusiva residenza che incarna il lusso moderno attraverso linee pulite, materiali naturali e una perfetta integrazione con l'ambiente circostante. Costruita interamente su un unico livello, la villa si distingue per le sue ampie vetrate panoramiche e gli eleganti listelli frangisole in legno naturale che ne caratterizzano la facciata principale.</p>
+                <ul class="depliant-features">
+                  <li data-it="Costruita interamente su un unico livello" data-en="Built entirely on a single level">Costruita interamente su un unico livello</li>
+                  <li data-it="Grandi vetrate panoramiche a tutta altezza" data-en="Large floor-to-ceiling panoramic windows">Grandi vetrate panoramiche a tutta altezza</li>
+                  <li data-it="Listelli frangisole in legno naturale sulla facciata principale" data-en="Natural wood sun-breaking slats on the main facade">Listelli frangisole in legno naturale sulla facciata principale</li>
+                  <li data-it="Piscina privata con solarium a gradoni" data-en="Private pool with terraced sunbathing area">Piscina privata con solarium a gradoni</li>
+                </ul>
+              </div>
+              <div class="depliant-contacts">
+                <p class="depliant-label" data-it="CONTATTI" data-en="CONTACTS">CONTATTI</p>
+                <p class="depliant-contact-title" data-it="Telefono:" data-en="Phone:">Telefono:</p>
+                <p>+39 340 3907922 — Arch. Salvatore Triassi<br>
+                +39 340 5796680 — Ing. Vincenzo Caruana<br>
+                +39 366 1116521 — Dott. Gianni Riggi<br>
+                +39 366 4353779 — Arch. Massimiliano Triassi</p>
+                <p class="depliant-contact-title" style="margin-top:16px;">Email:</p>
+                <p><a href="mailto:giardinellohouse@gmail.com">giardinellohouse@gmail.com</a><br>
+                <a href="mailto:consorziogiardinellohouse@gmail.com">consorziogiardinellohouse@gmail.com</a></p>
+              </div>
+              <div class="depliant-brand">
+                <p class="depliant-label" data-it="PROGETTO APPROVATO" data-en="APPROVED PROJECT">PROGETTO APPROVATO</p>
+                <h3>VILLA AZZURRA</h3>
+                <p class="depliant-subtitle" data-it="PROPRIETÀ DI LUSSO ESCLUSIVA • ELEGANZA E COMFORT" data-en="EXCLUSIVE LUXURY PROPERTY • ELEGANCE AND COMFORT">PROPRIETÀ DI LUSSO ESCLUSIVA • ELEGANZA E COMFORT</p>
+                <div class="depliant-logo-badge">GIARDINELLO HOUSE SRL</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab: Villa Perla -->
+        <div class="depliant-tab" data-tab="perla">
+          <div class="depliant-card">
+            <div class="depliant-image">
+              <img src="assets/images/ita/4_villa_perla.jpeg" data-en-src="assets/images/eng/4_villa_perla.jpeg" data-it-src="assets/images/ita/4_villa_perla.jpeg" alt="Villa Perla">
+            </div>
+            <div class="depliant-content">
+              <div class="depliant-text">
+                <p class="depliant-label" data-it="LA PROPRIETÀ" data-en="THE PROPERTY">LA PROPRIETÀ</p>
+                <p class="depliant-desc" data-it="Circondata da 1.500 mq di giardino mediterraneo e progettata per fondere armoniosamente architettura e paesaggio, Villa Perla rappresenta il perfetto equilibrio tra lusso, comfort e sostenibilità. Le sue ampie vetrate a tutta altezza inondano gli ambienti di luce naturale, creando una continuità visiva tra gli spazi interni e l'esclusivo scenario esterno." data-en="Surrounded by 1,500 sqm of Mediterranean garden and designed to harmoniously blend architecture and landscape, Villa Perla represents the perfect balance between luxury, comfort and sustainability. Its large floor-to-ceiling windows flood the rooms with natural light, creating a visual continuity between the interior spaces and the exclusive outdoor setting.">Circondata da 1.500 mq di giardino mediterraneo e progettata per fondere armoniosamente architettura e paesaggio, Villa Perla rappresenta il perfetto equilibrio tra lusso, comfort e sostenibilità. Le sue ampie vetrate a tutta altezza inondano gli ambienti di luce naturale, creando una continuità visiva tra gli spazi interni e l'esclusivo scenario esterno.</p>
+                <ul class="depliant-features">
+                  <li data-it="Circa 1.500 mq di giardino mediterraneo" data-en="Approx. 1,500 sqm of Mediterranean garden">Circa 1.500 mq di giardino mediterraneo</li>
+                  <li data-it="Ampie vetrate a tutta altezza" data-en="Large floor-to-ceiling windows">Ampie vetrate a tutta altezza</li>
+                  <li data-it="Piscina privata con design integrato" data-en="Private pool with integrated design">Piscina privata con design integrato</li>
+                  <li data-it="Equilibrio tra lusso, comfort e sostenibilità" data-en="Balance between luxury, comfort and sustainability">Equilibrio tra lusso, comfort e sostenibilità</li>
+                </ul>
+              </div>
+              <div class="depliant-contacts">
+                <p class="depliant-label" data-it="CONTATTI" data-en="CONTACTS">CONTATTI</p>
+                <p class="depliant-contact-title" data-it="Telefono:" data-en="Phone:">Telefono:</p>
+                <p>+39 340 3907922 — Arch. Salvatore Triassi<br>
+                +39 340 5796680 — Ing. Vincenzo Caruana<br>
+                +39 366 1116521 — Dott. Gianni Riggi<br>
+                +39 366 4353779 — Arch. Massimiliano Triassi</p>
+                <p class="depliant-contact-title" style="margin-top:16px;">Email:</p>
+                <p><a href="mailto:giardinellohouse@gmail.com">giardinellohouse@gmail.com</a><br>
+                <a href="mailto:consorziogiardinellohouse@gmail.com">consorziogiardinellohouse@gmail.com</a></p>
+              </div>
+              <div class="depliant-brand">
+                <p class="depliant-label" data-it="PROGETTO APPROVATO" data-en="APPROVED PROJECT">PROGETTO APPROVATO</p>
+                <h3>VILLA PERLA</h3>
+                <p class="depliant-subtitle" data-it="PROPRIETÀ DI LUSSO ESCLUSIVA • ELEGANZA E COMFORT" data-en="EXCLUSIVE LUXURY PROPERTY • ELEGANCE AND COMFORT">PROPRIETÀ DI LUSSO ESCLUSIVA • ELEGANZA E COMFORT</p>
+                <div class="depliant-logo-badge">GIARDINELLO HOUSE SRL</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab: Villa Corallo -->
+        <div class="depliant-tab" data-tab="corallo">
+          <div class="depliant-card">
+            <div class="depliant-image">
+              <img src="assets/images/ita/3_villa_corallo.jpeg" data-en-src="assets/images/eng/3_villa_corallo.jpeg" data-it-src="assets/images/ita/3_villa_corallo.jpeg" alt="Villa Corallo">
+            </div>
+            <div class="depliant-content">
+              <div class="depliant-text">
+                <p class="depliant-label" data-it="LA PROPRIETÀ" data-en="THE PROPERTY">LA PROPRIETÀ</p>
+                <p class="depliant-desc" data-it="Villa Corallo nasce dall'incontro tra la tradizione architettonica mediterranea e il comfort contemporaneo. Una residenza signorile a due piani, caratterizzata da raffinati elementi in pietra naturale sul prospetto, ampi spazi abitativi e un suggestivo tetto inclinato che richiama le più eleganti ville siciliane." data-en="Villa Corallo is born from the encounter between Mediterranean architectural tradition and contemporary comfort. A prestigious two-story residence, characterized by refined natural stone elements on the facade, spacious living areas and an evocative sloped roof that recalls the most elegant Sicilian villas.">Villa Corallo nasce dall'incontro tra la tradizione architettonica mediterranea e il comfort contemporaneo. Una residenza signorile a due piani, caratterizzata da raffinati elementi in pietra naturale sul prospetto, ampi spazi abitativi e un suggestivo tetto inclinato che richiama le più eleganti ville siciliane.</p>
+                <ul class="depliant-features">
+                  <li data-it="Architettura mediterranea a due piani" data-en="Two-story Mediterranean architecture">Architettura mediterranea a due piani</li>
+                  <li data-it="Elementi in pietra naturale sul prospetto" data-en="Natural stone elements on the facade">Elementi in pietra naturale sul prospetto</li>
+                  <li data-it="Ampi spazi abitativi e tetto inclinato" data-en="Spacious living areas and sloped roof">Ampi spazi abitativi e tetto inclinato</li>
+                  <li data-it="Piscina e zona outdoor con pranzo all'aperto" data-en="Pool and outdoor dining area">Piscina e zona outdoor con pranzo all'aperto</li>
+                </ul>
+              </div>
+              <div class="depliant-contacts">
+                <p class="depliant-label" data-it="CONTATTI" data-en="CONTACTS">CONTATTI</p>
+                <p class="depliant-contact-title" data-it="Telefono:" data-en="Phone:">Telefono:</p>
+                <p>+39 340 3907922 — Arch. Salvatore Triassi<br>
+                +39 340 5796680 — Ing. Vincenzo Caruana<br>
+                +39 366 1116521 — Dott. Gianni Riggi<br>
+                +39 366 4353779 — Arch. Massimiliano Triassi</p>
+                <p class="depliant-contact-title" style="margin-top:16px;">Email:</p>
+                <p><a href="mailto:giardinellohouse@gmail.com">giardinellohouse@gmail.com</a><br>
+                <a href="mailto:consorziogiardinellohouse@gmail.com">consorziogiardinellohouse@gmail.com</a></p>
+              </div>
+              <div class="depliant-brand">
+                <p class="depliant-label" data-it="PROGETTO APPROVATO" data-en="APPROVED PROJECT">PROGETTO APPROVATO</p>
+                <h3>VILLA CORALLO</h3>
+                <p class="depliant-subtitle" data-it="PROPRIETÀ DI LUSSO ESCLUSIVA • ELEGANZA E COMFORT" data-en="EXCLUSIVE LUXURY PROPERTY • ELEGANCE AND COMFORT">PROPRIETÀ DI LUSSO ESCLUSIVA • ELEGANZA E COMFORT</p>
+                <div class="depliant-logo-badge">GIARDINELLO HOUSE SRL</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab: Villa Smeraldo -->
+        <div class="depliant-tab" data-tab="smeraldo">
+          <div class="depliant-card">
+            <div class="depliant-image">
+              <img src="assets/images/ita/2_villa_smeraldo.jpeg" data-en-src="assets/images/eng/2_villa_smeraldo.jpeg" data-it-src="assets/images/ita/2_villa_smeraldo.jpeg" alt="Villa Smeraldo">
+            </div>
+            <div class="depliant-content">
+              <div class="depliant-text">
+                <p class="depliant-label" data-it="LA PROPRIETÀ" data-en="THE PROPERTY">LA PROPRIETÀ</p>
+                <p class="depliant-desc" data-it="Immersa in un contesto appartato e armonioso, questa splendida villa contemporanea coniuga il fascino dell'architettura mediterranea con i più elevati standard abitativi moderni. Linee pulite, materiali naturali e ampi spazi esterni creano una residenza esclusiva pensata per il relax totale." data-en="Set in a private and harmonious context, this splendid contemporary villa combines the charm of Mediterranean architecture with the highest modern living standards. Clean lines, natural materials and large outdoor spaces create an exclusive residence designed for total relaxation.">Immersa in un contesto appartato e armonioso, questa splendida villa contemporanea coniuga il fascino dell'architettura mediterranea con i più elevati standard abitativi moderni. Linee pulite, materiali naturali e ampi spazi esterni creano una residenza esclusiva pensata per il relax totale.</p>
+                <ul class="depliant-features">
+                  <li data-it="Piscina privata con solarium" data-en="Private pool with sunbathing area">Piscina privata con solarium</li>
+                  <li data-it="Ampio patio coperto con zona pranzo" data-en="Large covered patio with dining area">Ampio patio coperto con zona pranzo</li>
+                  <li data-it="Giardino paesaggistico mediterraneo" data-en="Mediterranean landscaped garden">Giardino paesaggistico mediterraneo</li>
+                  <li data-it="Materiali naturali di pregio e design contemporaneo" data-en="Premium natural materials and contemporary design">Materiali naturali di pregio e design contemporaneo</li>
+                </ul>
+              </div>
+              <div class="depliant-contacts">
+                <p class="depliant-label" data-it="CONTATTI" data-en="CONTACTS">CONTATTI</p>
+                <p class="depliant-contact-title" data-it="Telefono:" data-en="Phone:">Telefono:</p>
+                <p>+39 340 3907922 — Arch. Salvatore Triassi<br>
+                +39 340 5796680 — Ing. Vincenzo Caruana<br>
+                +39 366 1116521 — Dott. Gianni Riggi<br>
+                +39 366 4353779 — Arch. Massimiliano Triassi</p>
+                <p class="depliant-contact-title" style="margin-top:16px;">Email:</p>
+                <p><a href="mailto:giardinellohouse@gmail.com">giardinellohouse@gmail.com</a><br>
+                <a href="mailto:consorziogiardinellohouse@gmail.com">consorziogiardinellohouse@gmail.com</a></p>
+              </div>
+              <div class="depliant-brand">
+                <p class="depliant-label" data-it="PROGETTO APPROVATO" data-en="APPROVED PROJECT">PROGETTO APPROVATO</p>
+                <h3>VILLA SMERALDO</h3>
+                <p class="depliant-subtitle" data-it="PROPRIETÀ DI LUSSO ESCLUSIVA • ELEGANZA E COMFORT" data-en="EXCLUSIVE LUXURY PROPERTY • ELEGANCE AND COMFORT">PROPRIETÀ DI LUSSO ESCLUSIVA • ELEGANZA E COMFORT</p>
+                <div class="depliant-logo-badge">GIARDINELLO HOUSE SRL</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab: Consorzio -->
+        <div class="depliant-tab" data-tab="consorzio">
+          <div class="depliant-card">
+            <div class="depliant-image">
+              <img src="assets/images/consorzio_1.jpeg" alt="Consorzio Giardinello House">
+            </div>
+            <div class="depliant-content">
+              <div class="depliant-text">
+                <p class="depliant-label" data-it="IL CONSORZIO" data-en="THE CONSORTIUM">IL CONSORZIO</p>
+                <p class="depliant-desc" data-it="Il Consorzio Giardinello House raggruppa professionisti del territorio con l'obiettivo di valorizzare il patrimonio immobiliare di Seccagrande e Borgo Bonsignore. Un progetto di rigenerazione che unisce tradizione e innovazione, mare e cultura, relax ed eccellenza." data-en="The Giardinello House Consortium brings together local professionals with the aim of enhancing the real estate heritage of Seccagrande and Borgo Bonsignore. A regeneration project that combines tradition and innovation, sea and culture, relaxation and excellence.">Il Consorzio Giardinello House raggruppa professionisti del territorio con l'obiettivo di valorizzare il patrimonio immobiliare di Seccagrande e Borgo Bonsignore. Un progetto di rigenerazione che unisce tradizione e innovazione, mare e cultura, relax ed eccellenza.</p>
+                <ul class="depliant-features">
+                  <li data-it="Design contemporaneo con finiture calde e dai toni naturali" data-en="Contemporary design with warm, natural-toned finishes">Design contemporaneo con finiture calde e dai toni naturali</li>
+                  <li data-it="Ampie superfici vetrate per la luce naturale" data-en="Large glass surfaces for natural light">Ampie superfici vetrate per la luce naturale</li>
+                  <li data-it="Strutture in legno a vista per eleganza" data-en="Exposed wood structures for elegance">Strutture in legno a vista per eleganza</li>
+                  <li data-it="Perfetta integrazione tra spazi interni ed esterni" data-en="Perfect integration between indoor and outdoor spaces">Perfetta integrazione tra spazi interni ed esterni</li>
+                </ul>
+              </div>
+              <div class="depliant-contacts">
+                <p class="depliant-label" data-it="CONTATTI" data-en="CONTACTS">CONTATTI</p>
+                <p class="depliant-contact-title" data-it="Telefono:" data-en="Phone:">Telefono:</p>
+                <p>+39 340 3907922 — Arch. Salvatore Triassi<br>
+                +39 340 5796680 — Ing. Vincenzo Caruana<br>
+                +39 366 1116521 — Dott. Gianni Riggi<br>
+                +39 366 4353779 — Arch. Massimiliano Triassi</p>
+                <p class="depliant-contact-title" style="margin-top:16px;">Email:</p>
+                <p><a href="mailto:giardinellohouse@gmail.com">giardinellohouse@gmail.com</a><br>
+                <a href="mailto:consorziogiardinellohouse@gmail.com">consorziogiardinellohouse@gmail.com</a></p>
+              </div>
+              <div class="depliant-brand">
+                <p class="depliant-label" data-it="LUOGO" data-en="LOCATION">LUOGO</p>
+                <h3>CONSORZIO GIARDINELLO</h3>
+                <p class="depliant-subtitle" data-it="SECCAGRANDE • BORGO BONSIGNORE • RIBERA" data-en="SECCAGRANDE • BORGO BONSIGNORE • RIBERA">SECCAGRANDE • BORGO BONSIGNORE • RIBERA</p>
+                <div class="depliant-logo-badge">GIARDINELLO HOUSE SRL</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="depliant-tabs">
+        <button class="depliant-tab-btn active" data-tab="azzurra" onclick="switchDepliantTab('azzurra')">VILLA AZZURRA</button>
+        <button class="depliant-tab-btn" data-tab="perla" onclick="switchDepliantTab('perla')">VILLA PERLA</button>
+        <button class="depliant-tab-btn" data-tab="corallo" onclick="switchDepliantTab('corallo')">VILLA CORALLO</button>
+        <button class="depliant-tab-btn" data-tab="smeraldo" onclick="switchDepliantTab('smeraldo')">VILLA SMERALDO</button>
+        <button class="depliant-tab-btn" data-tab="consorzio" onclick="switchDepliantTab('consorzio')">CONSORZIO GIARDINELLO</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Giardinello House Consortium — Brochure</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+@page { size: A4 landscape; margin: 0; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Manrope', sans-serif; color: #1B1B1B; background: #fff; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+.page {
+  width: 297mm; height: 210mm;
+  display: flex; flex-direction: column;
+  overflow: hidden;
+  page-break-after: always;
+  page-break-inside: avoid;
+  position: relative;
+}
+.page:last-child { page-break-after: auto; }
+
+/* --- Cover --- */
+.cover {
+  background: linear-gradient(135deg, #152331 0%, #1a3040 50%, #152331 100%);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.cover img { height: 100px; margin-bottom: 8px; filter: invert(1); }
+.cover h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36pt; font-weight: 400;
+  letter-spacing: 0.04em; line-height: 1.1;
+}
+.cover h1 span { display: block; font-size: 18pt; font-weight: 300; opacity: 0.7; margin-top: 8px; letter-spacing: 0.15em; text-transform: uppercase; }
+.cover .subtitle {
+  font-size: 10pt; letter-spacing: 0.2em; text-transform: uppercase;
+  opacity: 0.5; margin-top: 12px;
+}
+.cover .piva {
+  position: absolute; bottom: 12mm; right: 14mm;
+  font-size: 7pt; opacity: 0.4;
+}
+
+/* --- Villa Page --- */
+.villa-page { flex-direction: column; }
+.villa-hero {
+  width: 100%; height: 105mm; overflow: hidden; position: relative;
+}
+.villa-hero img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center 30%;
+}
+.villa-hero .badge {
+  position: absolute; top: 8mm; left: 8mm;
+  background: #B96040; color: #fff;
+  padding: 3mm 6mm; font-size: 7pt; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase;
+}
+.villa-body {
+  flex: 1; display: flex;
+}
+.villa-text {
+  flex: 1.3; padding: 7mm 8mm;
+  border-right: 1px solid #e8e6dc;
+}
+.villa-contacts {
+  flex: 0.7; padding: 7mm 8mm;
+  border-right: 1px solid #e8e6dc;
+}
+.villa-brand {
+  flex: 0.7; padding: 7mm 8mm;
+  background: #152331; color: #fff;
+  display: flex; flex-direction: column; justify-content: center;
+}
+
+.label {
+  font-size: 7pt; font-weight: 700;
+  letter-spacing: 0.15em; text-transform: uppercase;
+  color: #B96040; margin-bottom: 3mm;
+}
+.villa-brand .label { color: #B96040; }
+.desc {
+  font-size: 8.5pt; line-height: 1.65; color: #444;
+  margin-bottom: 4mm;
+}
+.features { list-style: none; }
+.features li {
+  padding: 2mm 0; font-size: 8pt; color: #555;
+  border-bottom: 1px solid #f5f5f5;
+  display: flex; align-items: flex-start; gap: 2mm;
+}
+.features li::before {
+  content: '✓'; color: #899B68; font-weight: 700; flex-shrink: 0;
+}
+.contact-title {
+  font-size: 8pt; font-weight: 700; color: #1B1B1B; margin-bottom: 2mm;
+}
+.contact-info {
+  font-size: 7.5pt; line-height: 1.9; color: #444;
+}
+.villa-brand h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20pt; font-weight: 400;
+  margin-bottom: 2mm; letter-spacing: 0.03em;
+}
+.brand-sub {
+  font-size: 6.5pt; letter-spacing: 0.12em; text-transform: uppercase;
+  opacity: 0.6; margin-bottom: 4mm;
+}
+.brand-badge {
+  display: inline-block; padding: 2.5mm 5mm;
+  border: 1px solid rgba(255,255,255,0.3);
+  font-size: 7pt; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  align-self: flex-start;
+}
+.footer-bar {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  background: #152331; color: rgba(255,255,255,0.5);
+  padding: 2.5mm 8mm; font-size: 6pt;
+  text-align: center; letter-spacing: 0.08em;
+}
+
+/* Color badges */
+.badge-smeraldo { background: #899B68; }
+.badge-corallo { background: #B96040; }
+.badge-perla { background: #c4a97d; color: #1B1B1B; }
+.badge-azzurra { background: #91BCD6; }
+
+/* Print button */
+@media screen {
+  .print-btn {
+    position: fixed; top: 20px; right: 20px; z-index: 9999;
+    background: #B96040; color: #fff; border: none;
+    padding: 12px 24px; font-size: 14px; font-weight: 600;
+    cursor: pointer; font-family: 'Manrope', sans-serif;
+  }
+  .print-btn:hover { background: #a35235; }
+}
+@media print {
+  .print-btn { display: none; }
+}
+</style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">Print / Save PDF</button>
+
+<!-- PAGE 1: COVER -->
+<div class="page cover">
+  <img src="assets/logo_consorzio_giardinello.png" alt="Logo">
+  <h1>Giardinello House<span>Exclusive Villas on the Ribera Coast</span></h1>
+  <p class="subtitle">Seccagrande · Borgo Bonsignore · Ribera · Agrigento · Sicily</p>
+  <p class="piva">VAT 03085490849</p>
+</div>
+
+<!-- PAGE 2: VILLA SMERALDO -->
+<div class="page villa-page">
+  <div class="villa-hero">
+    <img src="assets/images/eng/2_villa_smeraldo.jpeg" alt="Villa Smeraldo">
+    <div class="badge badge-smeraldo">Villa Smeraldo</div>
+  </div>
+  <div class="villa-body">
+    <div class="villa-text">
+      <p class="label">The Property</p>
+      <p class="desc">Set in a private and harmonious context, this splendid contemporary villa combines the charm of Mediterranean architecture with the highest modern living standards. Clean lines, natural materials and large outdoor spaces create an exclusive residence designed for total relaxation.</p>
+      <ul class="features">
+        <li>Private pool with sunbathing area</li>
+        <li>Large covered patio with dining area</li>
+        <li>Mediterranean landscaped garden</li>
+        <li>Premium natural materials and contemporary design</li>
+      </ul>
+    </div>
+    <div class="villa-contacts">
+      <p class="label">Contacts</p>
+      <p class="contact-title">Phone:</p>
+      <p class="contact-info">+39 366 1116521<br>Sales Office</p>
+      <p class="contact-title" style="margin-top:4mm;">Email:</p>
+      <p class="contact-info">consorziogiardinellohouse@gmail.com</p>
+    </div>
+    <div class="villa-brand">
+      <p class="label">Approved Project</p>
+      <h3>Villa Smeraldo</h3>
+      <p class="brand-sub">Exclusive Luxury Property · Elegance and Comfort</p>
+      <div class="brand-badge">Giardinello-House Consortium</div>
+    </div>
+  </div>
+  <div class="footer-bar">Giardinello-House Consortium · VAT 03085490849 · Seccagrande · Ribera · Agrigento · Sicily</div>
+</div>
+
+<!-- PAGE 3: VILLA CORALLO -->
+<div class="page villa-page">
+  <div class="villa-hero">
+    <img src="assets/images/eng/3_villa_corallo.jpeg" alt="Villa Corallo">
+    <div class="badge badge-corallo">Villa Corallo</div>
+  </div>
+  <div class="villa-body">
+    <div class="villa-text">
+      <p class="label">The Property</p>
+      <p class="desc">Villa Corallo is born from the encounter between Mediterranean architectural tradition and contemporary comfort. A prestigious two-story residence, characterized by refined natural stone elements on the facade, spacious living areas and an evocative sloped roof that recalls the most elegant Sicilian villas.</p>
+      <ul class="features">
+        <li>Two-story Mediterranean architecture</li>
+        <li>Natural stone elements on the facade</li>
+        <li>Spacious living areas and sloped roof</li>
+        <li>Pool and outdoor dining area</li>
+      </ul>
+    </div>
+    <div class="villa-contacts">
+      <p class="label">Contacts</p>
+      <p class="contact-title">Phone:</p>
+      <p class="contact-info">+39 366 1116521<br>Sales Office</p>
+      <p class="contact-title" style="margin-top:4mm;">Email:</p>
+      <p class="contact-info">consorziogiardinellohouse@gmail.com</p>
+    </div>
+    <div class="villa-brand">
+      <p class="label">Approved Project</p>
+      <h3>Villa Corallo</h3>
+      <p class="brand-sub">Exclusive Luxury Property · Elegance and Comfort</p>
+      <div class="brand-badge">Giardinello-House Consortium</div>
+    </div>
+  </div>
+  <div class="footer-bar">Giardinello-House Consortium · VAT 03085490849 · Seccagrande · Ribera · Agrigento · Sicily</div>
+</div>
+
+<!-- PAGE 4: VILLA PERLA -->
+<div class="page villa-page">
+  <div class="villa-hero">
+    <img src="assets/images/eng/4_villa_perla.jpeg" alt="Villa Perla">
+    <div class="badge badge-perla">Villa Perla</div>
+  </div>
+  <div class="villa-body">
+    <div class="villa-text">
+      <p class="label">The Property</p>
+      <p class="desc">Surrounded by 1,500 sqm of Mediterranean garden and designed to harmoniously blend architecture and landscape, Villa Perla represents the perfect balance between luxury, comfort and sustainability. Its large floor-to-ceiling windows flood the rooms with natural light, creating a visual continuity between the interior spaces and the exclusive outdoor setting.</p>
+      <ul class="features">
+        <li>Approx. 1,500 sqm of Mediterranean garden</li>
+        <li>Large floor-to-ceiling windows</li>
+        <li>Private pool with integrated design</li>
+        <li>Balance between luxury, comfort and sustainability</li>
+      </ul>
+    </div>
+    <div class="villa-contacts">
+      <p class="label">Contacts</p>
+      <p class="contact-title">Phone:</p>
+      <p class="contact-info">+39 366 1116521<br>Sales Office</p>
+      <p class="contact-title" style="margin-top:4mm;">Email:</p>
+      <p class="contact-info">consorziogiardinellohouse@gmail.com</p>
+    </div>
+    <div class="villa-brand">
+      <p class="label">Approved Project</p>
+      <h3>Villa Perla</h3>
+      <p class="brand-sub">Exclusive Luxury Property · Elegance and Comfort</p>
+      <div class="brand-badge">Giardinello-House Consortium</div>
+    </div>
+  </div>
+  <div class="footer-bar">Giardinello-House Consortium · VAT 03085490849 · Seccagrande · Ribera · Agrigento · Sicily</div>
+</div>
+
+<!-- PAGE 5: VILLA AZZURRA -->
+<div class="page villa-page">
+  <div class="villa-hero">
+    <img src="assets/images/eng/5_villa_azzurra.jpeg" alt="Villa Azzurra">
+    <div class="badge badge-azzurra">Villa Azzurra</div>
+  </div>
+  <div class="villa-body">
+    <div class="villa-text">
+      <p class="label">The Property</p>
+      <p class="desc">Villa Azzurra is an exclusive residence that embodies modern luxury through clean lines, natural materials and perfect integration with the surrounding environment. Built entirely on a single level, the villa stands out for its large panoramic windows and elegant natural wood sun-breaking slats that characterize the main facade.</p>
+      <ul class="features">
+        <li>Built entirely on a single level</li>
+        <li>Large floor-to-ceiling panoramic windows</li>
+        <li>Natural wood sun-breaking slats on the main facade</li>
+        <li>Private pool with terraced sunbathing area</li>
+      </ul>
+    </div>
+    <div class="villa-contacts">
+      <p class="label">Contacts</p>
+      <p class="contact-title">Phone:</p>
+      <p class="contact-info">+39 366 1116521<br>Sales Office</p>
+      <p class="contact-title" style="margin-top:4mm;">Email:</p>
+      <p class="contact-info">consorziogiardinellohouse@gmail.com</p>
+    </div>
+    <div class="villa-brand">
+      <p class="label">Approved Project</p>
+      <h3>Villa Azzurra</h3>
+      <p class="brand-sub">Exclusive Luxury Property · Elegance and Comfort</p>
+      <div class="brand-badge">Giardinello-House Consortium</div>
+    </div>
+  </div>
+  <div class="footer-bar">Giardinello-House Consortium · VAT 03085490849 · Seccagrande · Ribera · Agrigento · Sicily</div>
+</div>
+
+<!-- PAGE 6: CONSORTIUM -->
+<div class="page villa-page">
+  <div class="villa-hero">
+    <img src="assets/images/consorzio_1.jpeg" alt="Giardinello-House Consortium">
+  </div>
+  <div class="villa-body">
+    <div class="villa-text">
+      <p class="label">The Consortium</p>
+      <p class="desc">The Giardinello-House Consortium brings together local professionals with the aim of enhancing the real estate heritage of Seccagrande and Borgo Bonsignore. A regeneration project that combines tradition and innovation, sea and culture, relaxation and excellence.</p>
+      <ul class="features">
+        <li>Contemporary design with warm, natural-toned finishes</li>
+        <li>Large glass surfaces for natural light</li>
+        <li>Exposed wood structures for elegance</li>
+        <li>Perfect integration between indoor and outdoor spaces</li>
+      </ul>
+    </div>
+    <div class="villa-contacts">
+      <p class="label">Contacts</p>
+      <p class="contact-title">Phone:</p>
+      <p class="contact-info">+39 366 1116521<br>Sales Office</p>
+      <p class="contact-title" style="margin-top:4mm;">Email:</p>
+      <p class="contact-info">consorziogiardinellohouse@gmail.com</p>
+    </div>
+    <div class="villa-brand">
+      <p class="label">Location</p>
+      <h3>Giardinello Consortium</h3>
+      <p class="brand-sub">Seccagrande · Borgo Bonsignore · Ribera</p>
+      <div class="brand-badge">Giardinello-House Consortium</div>
+    </div>
+  </div>
+  <div class="footer-bar">Giardinello-House Consortium · VAT 03085490849 · Seccagrande · Ribera · Agrigento · Sicily</div>
+</div>
+
+</body>
+</html>

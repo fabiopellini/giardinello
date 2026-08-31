@@ -1,0 +1,11 @@
+# OS
+Thumbs.db
+.DS_Store
+
+# Editor
+*.swp
+*.swo
+*~
+
+# Large binaries (uncomment if you want to exclude the video)
+# assets/video_villa.mp4
