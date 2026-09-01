@@ -1010,7 +1010,7 @@ h4 { font-size: 1.1rem; font-family: var(--font-sans); font-weight: 600; }
 
 .footer-brand .logo-img {
   height: 48px;
-  filter: brightness(0) invert(1);
+  filter: invert(1);
   mix-blend-mode: screen;
 }
 
