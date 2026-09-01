@@ -1011,6 +1011,7 @@ h4 { font-size: 1.1rem; font-family: var(--font-sans); font-weight: 600; }
 .footer-brand .logo-img {
   height: 48px;
   filter: brightness(0) invert(1);
+  mix-blend-mode: screen;
 }
 
 .footer-brand p {
@@ -1441,6 +1442,12 @@ h4 { font-size: 1.1rem; font-family: var(--font-sans); font-weight: 600; }
 
 .depliant-image img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+.depliant-image6 img {
+  width: 80%;
   height: 100%;
   object-fit: cover;
   object-position: center 30%;
