@@ -2,7 +2,7 @@ Progetta e sviluppa una landing page premium, responsive e bilingue (italiano co
 
 
 
-consorzio GIARDINELLO HOUSE 
+consorzio GIARDINELLO HOUSE
 
 Progetto immobiliare di ville e villini esclusivi a Seccagrande e Borgo Bonsignore, nel territorio di Ribera, Agrigento, Sicilia.
 
@@ -566,7 +566,7 @@ Footer essenziale con:
 
 \- Logo Giardinello House
 
-\- “Giardinello House S.r.l.”
+\- “Consorzio Giardinello House”
 
 \- Link: Home, Il progetto, Le ville, Il territorio, Contatti
 
@@ -576,7 +576,7 @@ Footer essenziale con:
 
 \- Copyright:
 
-“© 2026 Giardinello House S.r.l. Tutti i diritti riservati.”
+“© 2026 Cosorzio Giardinello House - Tutti i diritti riservati.”
 
 
 
